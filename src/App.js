@@ -3,22 +3,20 @@ import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills';
-import Contribution from './sections/contribution';
 import Contact from './sections/Contact';
-import Card from './components/Card';
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <div className="scroll-smooth">
       <Navbar />
-      <Hero/>
-      <About/>
-      <Card/>
-      <Skills/>
-      <Contribution/>
-      <Contact/>
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Contact />
+      </main>
     </div>
   );
-}
+};
 
 export default App;
